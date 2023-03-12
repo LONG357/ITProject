@@ -23,3 +23,5 @@ noi dung them moi dong thu 2
 
 Noi dung nhan vien C
 
+Noi dung nhan vien D
+
