@@ -1,0 +1,50 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!Doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/Style04.css" type="text/css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(120deg,#2980b9,#8e44ad);
+            height: 100vh;
+            overflow: hidden;
+            font-family: sans-serif;
+            
+        }
+
+
+    </style>
+    <div class="center">
+        <h1>Đăng Nhập</h1>
+        <form method="post">
+            <div class="txt_fiel">
+                <input type="text" required />
+                <span></span>
+                <label>Tên đăng nhập</label>
+            </div>
+            <div class="txt_fiel">
+                <input type="text" required />
+                <span></span>
+                <label>Mật khẩu</label>
+            </div>
+            <div class="pass">Quên mật khẩu ?</div>
+            <input type="submit" value="Đăng nhập" />
+            <div class="Dangky_link">
+                Bạn chưa có tài khoản <a href='@Url.Action("Dangky","Home")'>Đăng ký</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+

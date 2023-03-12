@@ -1,0 +1,83 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!Doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/Style04.css" type="text/css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(120deg,#2980b9,#8e44ad);
+            height: 100vh;
+            overflow: hidden;
+            font-family: sans-serif;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+    </style>
+   <div class="conatiner">
+       <div class="title">Đăng ký</div>
+       <form action="#">
+           <div class="use-details">
+               <div class="inpux-box">
+                   <span class="details">Tên đầy đủ</span>
+                   <input type="text" placeholder="Điền tên đầy đủ" required />
+               </div>
+               <div class="inpux-box">
+                   <span class="details">Tên đăng nhập</span>
+                   <input type="text" placeholder="Điền tên đăng nhập" required />
+               </div>
+               <div class="inpux-box">
+                   <span class="details">Email</span>
+                   <input type="text" placeholder="Điền Email" required />
+               </div>
+               <div class="inpux-box">
+                   <span class="details">Số điện thoại</span>
+                   <input type="text" placeholder="Điền số điện thoại" required />
+               </div>
+               <div class="inpux-box">
+                   <span class="details">Mật khẩu</span>
+                   <input type="text" placeholder="Điền mật khẩu" required />
+               </div>
+               <div class="inpux-box">
+                   <span class="details">Xác nhận mật khẩu</span>
+                   <input type="text" placeholder="Xác nhận mật khẩu" required />
+               </div>
+           </div>
+           <div class="gender-details">
+               <input type="radio" name="gender" id="dot-1" />
+               <input type="radio" name="gender" id="dot-2" />
+               <input type="radio" name="gender" id="dot-3" />  
+               <span class="gender-title">Giới tính</span>
+               <div class="category">
+                   <label for="dot-1">
+                       <span class="dot one"></span>
+                       <span class="gender">Nam</span>
+                   </label>
+                   <label for="dot-2">
+                       <span class="dot two"></span>
+                       <span class="gender">Nữ</span>
+                   </label>
+                   <label for="dot-3">
+                       <span class="dot three"></span>
+                       <span class="gender">Thứ 3</span>
+                   </label>
+               </div>
+           </div>
+           <div class="button1">
+               <input type="submit"  value="Đăng ký" />
+           </div>
+       </form>
+   </div>
+</body>
+</html>

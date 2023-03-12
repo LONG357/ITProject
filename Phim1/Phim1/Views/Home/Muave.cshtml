@@ -1,0 +1,161 @@
+﻿
+@{
+    Layout = null;
+}
+
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="~/Content/Style04.css" type="text/css" rel="stylesheet" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" rel="stylesheet">
+        <title>Muave</title>
+    </head>
+    <body>
+
+        <style>
+            body {
+                background: linear-gradient(120deg,#2980b9,#8e44ad);
+                display: flex;
+                flex-direction: column;
+                color: white;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                font-family: 'Lato', 'sans-serif';
+            }
+
+            * {
+                padding: 0;
+                margin: 5px;
+                box-sizing: border-box;
+            }
+        </style>
+        <div class="conatiner2">
+            <div class="title">Đặt vé ngay</div>
+            <div class="movie-container">
+                <label> Select a movie:</label>
+                <select id="movie">
+                    <option value="220">Godzilla vs Kong (250VND)</option>
+                    <option value="320">Dragon Ball:Super (320VND)</option>
+                    <option value="250"> Avengers:Endgame (250VND)</option>
+                    <option value="260">   The Falcon(260VND)</option>
+                </select>
+            </div>
+            <div class="inpux-box">
+                <label>Chọn Ngày</label>
+                <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+            </div>
+            <div class="inpux-box">
+                <label>Chọn Giờ Chiếu</label>
+                <input class="datetime" type="button" value="12H30" />
+                <input class="datetime" type="button" value="12H30" />
+                <input class="datetime" type="button" value="12H30" />
+                <input class="datetime" type="button" value="12H30" />
+            </div>
+            <div class="inpux-box">
+                <input class="datetime" type="button" value="12H30" />
+                <input class="datetime" type="button" value="12H30" />
+                <input class="datetime" type="button" value="12H30" />
+                <input class="datetime" type="button" value="12H30" />
+            </div>
+
+            <ul class="showcase">
+                <li>
+                    <div class="seat"></div>
+                    <small>Còn chỗ</small>
+                </li>
+                <li>
+                    <div class="seat selected"></div>
+                    <small>Đặt chỗ</small>
+                </li>
+                <li>
+                    <div class="seat sold"></div>
+                    <small>Đã đầy</small>
+                </li>
+            </ul>
+            <div class="container2">
+                <div class="screen">
+                    <span>Rạp Phim CGV.COM</span>
+                </div>
+
+                <div class="row">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+
+                <div class="row">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat sold"></div>
+                    <div class="seat sold"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+                <div class="row">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat sold"></div>
+                    <div class="seat sold"></div>
+                </div>
+                <div class="row">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+                <div class="row">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat sold"></div>
+                    <div class="seat sold"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+                <div class="row">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="seat sold"></div>
+                    <div class="seat sold"></div>
+                    <div class="seat sold"></div>
+                    <div class="seat"></div>
+
+                </div>
+            </div>
+
+            <p class="text">
+                Bạn đã chọn: <span id="count">0</span>chỗ ngồi tổng tiền:<span id="total">0</span>
+            </p>
+            <div class="button1">
+                <input type="submit" value="Mua vé" />
+            </div>
+        </div>
+
+
+        <script src="~/Content/JavaScript2.js"></script>
+    </body>
+    </html>
